@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <link rel="stylesheet"  href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=oswald">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Samet OZ | Design Portfolio</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+</head>
+
+<body class="unselectable">
+    <div class="flex-container">
+      
+        <div class="flex-item-left" style="background-color:white;">
+             
+  
+            <div class="pp"></div>
+            <h1> Samet OZ </h1>
+            <h6>A PhD candidate linguist by day. <br> A newbie UI designer by night.</h6>
+            <div>
+                <table align="center">
+                    <tr>
+                      <td><a href="docs/resume.pdf" alt="My resume" class="fa fa-file"></a></td>
+                      <td><a href="https://www.linkedin.com/in/samet-oz-7516b5223/" class="fa fa-linkedin"></a></td>
+                      <td><a href="https://www.instagram.com/tsey/" class="fa fa-instagram"></a></td>
+                      <td><a href="https://dribbble.com/kw4nzah" class="fa fa-dribbble"></a></td>
+                      <td><a href="mailto:oz.samet@mail.ru" class="fa fa-envelope"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="flex-item-right">
+            <div class="iphone-x">
+                <i>Speaker</i>
+                <b>Camera</b>
+                
+                <div id="container"> </div>
+                <script> 
+                    var images = ['checkout.jpg','item.jpg','menu1-birds.jpg','menu1-cats.jpg','menu1-dogs.jpg','menu1-fish.jpg','menu1-others.jpg','menu1-reptiles.jpg','menu1.jpg','payment.jpg','splash.jpg','resize.gif'];
+                     
+                    $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#container');
+                    </script>
+              </div>
+        </div>
+
+
+
+</body>
+
+</html>
