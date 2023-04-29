@@ -1,57 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-    <link rel="stylesheet"  href="main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=oswald">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://kit.fontawesome.com/071add2f73.js" crossorigin="anonymous"></script>
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Samet OZ | Design Portfolio</title>
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+body {
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    @media only screen and (min-width: 600px) {
+  .desktop {
+    display: block;
+  }
+  
+  .mobile {
+    display: none;
+  }
+}
 
-    <title>Samet OZ | Design Portfolio</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+}
+    </style>
 </head>
 
-<body class="unselectable">
-    <div class="flex-container">
-      
-        <div class="flex-item-left" style="background-color:white;">
-             
+<body>
+  <header>
+    <img class="rotate-reverse" src="/images/camet_mini_white.jpg" height="50">
+    <nav>
+      <ul>
+        <li><a href="#home">About</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   
-            <div class="pp"></div>
-            <h1> Samet OZ </h1>
-            <h6>A PhD candidate linguist by day. <br> A newbie UI designer by night.</h6>
-            <div>
-                <table align="center">
-                    <tr>
-                      <td><a href="docs/resume.pdf" alt="My resume" class="fa fa-file"></a></td>
-                      <td><a href="https://www.linkedin.com/in/samet-oz-7516b5223/" class="fa fa-linkedin"></a></td>
-                      <td><a href="https://www.instagram.com/tsey/" class="fa fa-instagram"></a></td>
-                      <td><a href="https://dribbble.com/kw4nzah" class="fa fa-dribbble"></a></td>
-                      <td><a href="mailto:oz.samet@mail.ru" class="fa fa-envelope"></a></td>
-                    </tr>
-                </table>
-            </div>
+  <main>
+    <div class="glassmorphism">
+      <div class="container">
+        <div class="item item1 section" id="home">
+          <h2>Hey there, I'm Samet.</h2>
+            <p>I design and develop responsive websites that look great on any device.</p>
+            &nbsp;
+            <p>While you're around, please feel free to check my resume, profile showcase and/or social platforms out.</p>
+            &nbsp;
+            <button class="crack-button" onclick="location.href='/docs/ozsamet-resume-en.pdf'" type="button">My Resume</button>
         </div>
-
-        <div class="flex-item-right">
-            <div class="iphone-x">
-                <i>Speaker</i>
-                <b>Camera</b>
-                
-                <div id="container"> </div>
-                <script> 
-                    var images = ['checkout.jpg','item.jpg','menu1-birds.jpg','menu1-cats.jpg','menu1-dogs.jpg','menu1-fish.jpg','menu1-others.jpg','menu1-reptiles.jpg','menu1.jpg','payment.jpg','splash.jpg','resize.gif'];
-                     
-                    $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#container');
-                    </script>
-              </div>
+        <div class="item item2 section-no-border centre">
+          <img class="rotate" src="/images/camet_head.png" height="200" alt="hehe">
         </div>
+        <div class="item item3 section-no-border" id="showcase">
+          <h2>Portfolio</h2>
+          <p>You can check out my work by simply clicking the button below. Hope you enjoy them all! </p>
+          <button onclick="location.href='/showcase.html'" class="crack-button">Let's go</button>
 
-
+        </div>
+        <div class="item item4 section" id="contact">
+          <h2>Let's talk.</h2>
+      <p>Feel free to reach out for business inquiries or even just to say hi.</p>
+      <div class="social-media">
+        <a href="mailto:oz.samet@mail.ru" class="btn btn-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/oz-samet/" alt="LinkedIn" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://dribbble.com/kw4nzah/" target="_blank" class="dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="https://hh.ru/resume/ba054201ff0802a6e30039ed1f38794d365170/" target="_blank" class="hhru"><i class="fas fa-briefcase"></i></a>
+      </div>
+        </div>
+      </div>
+<footer class="footer">
+    <p>&copy;2023. Made with ❤️</p>
+  </footer>
+    </div>
+  </main>
 
 </body>
-
 </html>
