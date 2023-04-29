@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://kit.fontawesome.com/071add2f73.js" crossorigin="anonymous"></script>
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Samet OZ | Design Portfolio</title>
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+body {
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    @media only screen and (min-width: 600px) {
+  .desktop {
+    display: block;
+  }
+  
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+}
+    </style>
+</head>
+
+<body>
+  <header>
+    <img class="rotate-reverse" src="/images/camet_mini_white.jpg" height="50">
+    <nav>
+      <ul>
+        <li><a href="#home">About</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="glassmorphism">
+      <div class="container">
+        <div class="item item1 section" id="home">
+          <h2>Hey there, I'm Samet.</h2>
+            <p>I design and develop responsive websites that look great on any device.</p>
+            &nbsp;
+            <p>While you're around, please feel free to check my resume, profile showcase and/or social platforms out.</p>
+            &nbsp;
+            <button class="crack-button" onclick="location.href='/docs/ozsamet-resume-en.pdf'" type="button">My Resume</button>
+        </div>
+        <div class="item item2 section-no-border centre">
+          <img class="rotate" src="/images/camet_head.png" height="200" alt="hehe">
+        </div>
+        <div class="item item3 section-no-border" id="showcase">
+          <h2>Portfolio</h2>
+          <p>You can check out my work by simply clicking the button below. Hope you enjoy them all! </p>
+          <button onclick="location.href='/showcase.html'" class="crack-button">Let's go</button>
+
+        </div>
+        <div class="item item4 section" id="contact">
+          <h2>Let's talk.</h2>
+      <p>Feel free to reach out for business inquiries or even just to say hi.</p>
+      <div class="social-media">
+        <a href="mailto:oz.samet@mail.ru" class="btn btn-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/oz-samet/" alt="LinkedIn" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://dribbble.com/kw4nzah/" target="_blank" class="dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="https://hh.ru/resume/ba054201ff0802a6e30039ed1f38794d365170/" target="_blank" class="hhru"><i class="fas fa-briefcase"></i></a>
+      </div>
+        </div>
+      </div>
+<footer class="footer">
+    <p>&copy;2023. Made with ❤️</p>
+  </footer>
+    </div>
+  </main>
+
+</body>
+</html>
